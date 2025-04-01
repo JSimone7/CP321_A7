@@ -18,6 +18,7 @@ def getData():
 
 df, winners, winCount, mapData = getData()
 app = Dash()
+server = app.server
 
 app.layout = [
     html.H1(children="World Cup Dashboard", style={"textAlign":"center", "color": "grey"}),
